@@ -12,7 +12,7 @@ base {
     archivesName = project.archives_base_name
 }
 checkstyle {
-    toolVersion = '10.12.4'
+    toolVersion = '11.0.0'
     configFile = file('checkstyle.xml')
 }
 
