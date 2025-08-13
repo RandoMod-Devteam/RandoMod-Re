@@ -17,7 +17,7 @@ import net.minecraft.util.Identifier;
 import java.util.function.Function;
 
 public class ModBlocks {
-    public static final Block RANDOMOD_BLOCK = register("randomod_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.GRASS), true);
+    public static final Block RANDOMOD_BLOCK = register("randomod_block", Block::new, AbstractBlock.Settings.create().sounds(BlockSoundGroup.NETHERITE), true);
 
     private static Block register(String name, Function<AbstractBlock.Settings, Block> blockFactory, AbstractBlock.Settings settings, boolean shouldRegisterItem) {
         System.gc();
@@ -57,9 +57,7 @@ public class ModBlocks {
     }
 
     public static void registerBlocks() {
-        ItemGroupEvents.modifyEntriesEvent(RandoModItemGroup.RANDOMOD_ITEM_GROUP_KEY).register((itemGroup) -> {
-            itemGroup.add(ModBlocks.RANDOMOD_BLOCK.asItem());
-        });
+        ItemGroupEvents.modifyEntriesEvent(RandoModItemGroup.RANDOMOD_ITEM_GROUP_KEY).register((itemGroup) -> itemGroup.add(ModBlocks.RANDOMOD_BLOCK.asItem()));
         System.gc();
     }
 }
