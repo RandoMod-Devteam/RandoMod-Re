@@ -3,10 +3,9 @@
 
 **Support 1.21.7**
 
-**Optimiz**
-
 **Warning To Fork/Use user:This Project is Use SPPL-Patch3 License**
 
-**Welcome Issue/PR!**
+**Welcome You Push Issue/PR!**
 
-**by gi199**
+**by RandoMod Developer Team**
+
