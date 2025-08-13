@@ -1,6 +1,8 @@
 plugins {
     id 'fabric-loom' version '1.11.5'
     id 'maven-publish'
+    id 'java'
+    id 'checkstyle'
 }
 
 version = project.mod_version
@@ -8,6 +10,10 @@ group = project.maven_group
 
 base {
     archivesName = project.archives_base_name
+}
+checkstyle {
+    toolVersion = '10.12.4'
+    configFile = file('checkstyle.xml')
 }
 
 repositories {
