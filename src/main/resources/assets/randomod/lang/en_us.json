@@ -12,5 +12,6 @@
   "effect.randomod.man": "Man",
   "advancements.randomod.getSecretItem": "Get Secret Item",
   "advancements.randomod.getSecretItem.description": "Fuel is Infinity!",
-  "block.randomod.randomod_block": "RandoMod Block"
+  "block.randomod.randomod_block": "RandoMod Block",
+  "item.randomod.randomod_block":"RandoMod Block"
 }
