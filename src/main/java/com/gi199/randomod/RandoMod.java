@@ -24,19 +24,13 @@ public class RandoMod implements ModInitializer {
     // That way, it's clear which mod wrote info, warnings, and errors.
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
     //
-    public static final RegistryEntry<StatusEffect> MAN = Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(MOD_ID, "man"), new ManEffect());
+    public static final RegistryEntry<StatusEffect> MAN = Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(MOD_ID, "man"),new ManEffect());
 
     @Override
     public void onInitialize() {
         // This code runs as soon as Minecraft is in a mod-load-ready state.
         // However, some things (like resources) may still be uninitialized.
         // Proceed with mild caution.
-        int a=1;
-        while (a==1) {
-            System.gc();
-            System.gc();
-            a=0;
-        }
         LOGGER.info("Hello Fabric world!");
         ItemClasses.fuel();
         //
@@ -48,8 +42,6 @@ public class RandoMod implements ModInitializer {
         //
         SecretArmorMaterial.registerSecretArmor();
         ModBlocks.registerBlocks();
-        System.gc();
         ManPotion.initialize();
-        System.gc();
     }
 }

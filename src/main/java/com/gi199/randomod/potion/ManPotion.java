@@ -36,7 +36,6 @@ public class ManPotion implements ModInitializer {
                     // Output potion.
                     Registries.POTION.getEntry(MAN_POTION)
             );
-            System.gc();
         });
     }
 }
